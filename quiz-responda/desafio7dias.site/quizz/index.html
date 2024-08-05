@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="pt-br">
+    <script
+  src="../../cdn.utmify.com.br/scripts/utms/latest.js"
+  async
+  defer
+></script>
+  <!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'../../connect.facebook.net/en_US/fbevents.js');
+fbq('init', '976827497511243');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=976827497511243&amp;ev=PageView&amp;noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+    
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <script src="js/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <title>Avaliação IGNITE</title>
+</head>
+<body>
+  <header>
+    <i class="fa-solid fa-bars" style="color: white"></i>
+    <!-- <img src="assets/images/google_logo.svg" alt=""> -->
+    <img src="images/logo.png" alt="">
+    <span id="saldo" style="margin-left: auto"></span>
+  </header>
+  <main>
+    <div class="card pergunta01" id="pergunta01">
+      <div class="card__logo">
+        <img src="images/i1.jpg" alt="">
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Em qual faixa etária você se encontra?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">18-24 anos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">25-34 anos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">35-44 anos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">45-54 anos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">55-64 anos</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">65 anos ou mais</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta01()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card pergunta02" id="pergunta02" style="display: none">
+      <div class="card__logo">
+        <img src="images/i2.jpg" alt="">
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Qual é o seu peso atual?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Menos de 50 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">50-60 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">60-70 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">70-80 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">80-90 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Mais de 90 kg</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta02()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta03" id="pergunta03" style="display: none">
+      <div class="card__logo">
+        <img src="images/i3.jpg" alt="">
+      </div>
+      <div class="card__resposta">
+        <h2>Quantos KG você gostaria de perder?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Menos de 5 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">5-10 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">10-20 kg</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Mais de 20 kg</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta03()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta04" id="pergunta04" style="display: none">
+      <div class="card__logo">
+        <img src="images/i4.jpg" alt="">
+      </div>
+      <div class="card__resposta">
+        <h2>Qual é o seu maior vício alimentar?</h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Doces</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Salgados</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Refrigerantes</p>
+          </div>
+          <div class="resposta__grade resposta2" onclick="toggleResponse(this, 'resposta2')">
+            <p>Outros</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta04()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+
+    <div class="card pergunta05" id="pergunta05" style="display: none">
+      <div class="card__logo">
+        <img src="images/i5.jpg" alt="">
+      </div>
+      <div class="card__resposta">
+        <h2>
+          Você já tentou outros métodos de perda de peso antes?
+        </h2>
+        <div class="resposta__gradeContainer">
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Sim, e funcionou</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Sim, mas não funcionou</p>
+          </div>
+          <div class="resposta__grade resposta1" onclick="toggleResponse(this, 'resposta1')">
+            <p onclick="scrollToDown()">Não, esta é minha primeira tentativa</p>
+          </div>
+        </div>
+      </div>
+      <button class="card__enviarResposta" id="enviarResposta" onclick="pergunta05()" disabled="">
+        Enviar avaliação
+      </button>
+    </div>
+    <div class="card finalizacao" id="finalizacao" style="display: none">
+      <div class="finalizacao__titulo">
+        <h1>OBRIGADO POR PARTICIPAR!</h1>
+      </div>
+      <div class="finalizacao__trofeu">
+        <img src="images/final.jpg" alt="">
+      </div>
+      <div class="finalizacao__descricao">
+        <p>
+          Você concluiu nossa avaliação!
+          <b>Suas informações estão seguras conosco</b>! Clique no botão <b>Quero Emagrecer!</b> abaixo para
+          adquirir nosso método Francês totalmente legalizado.
+        </p>
+        <p>
+          O quiz foi apenas uma maneira de nos conectarmos melhor com você e entendermos suas necessidades..<br><br>Com carinho, <br>Equipe DESAFIO 7 DIAS.
+        </p>
+      </div>
+      <div class="finalizacao__botao">
+        <a href="https://www.desafio7dias.site"><button><i class="fa-solid fa-gift"></i>QUERO EMAGRECER!</button></a>
+      </div>
+    </div>
+
+    <button data-bs-toggle="modal" data-bs-target="#modal01" id="popup" style="display: none"></button>
+
+    <div class="modal" tabindex="-1" id="modal01">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="card apresentacao">
+            <h2>
+               🎉  Gostariamos de conhecer um pouco mais de você! 🎉
+            </h2>
+            <p>
+              Estamos muito felizes em tê-lo aqui! Este quiz é uma maneira divertida e interativa de conhecê-lo melhor e entender suas preferências sobre emagrecimento.Queremos que você se sinta à vontade e aproveite essa experiência. Não se preocupe, suas respostas são confidenciais e serão usadas apenas para melhorar nossos programas e serviços.
+              <strong>Vamos começar?</strong>
+            </p>
+            <button type="button" data-bs-dismiss="modal">COMEÇAR</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/hideAllExcept.js"></script>
+  <script src="js/selectedCard.js"></script>
+  <script src="js/selectedResponse.js"></script>
+  <script src="js/buttonCheck.js"></script>
+  <script src="js/popup.js"></script>
+  <script src="js/sendResponse.js"></script>
+  <script>
+    $(document).ready(function () {
+      let data = new Date();
+
+      var date = data.getDate();
+      var month = [
+        "Janeiro",
+        "Fevereiro",
+        "Março",
+        "Abril",
+        "Maio",
+        "Junho",
+        "Julho",
+        "Agosto",
+        "Setembro",
+        "Outubro",
+        "Novembro",
+        "Dezembro",
+      ][data.getMonth()];
+      var year = data.getFullYear();
+
+      $("#todayDate").html(`${date} de ${month} de ${year}**`);
+    });
+  </script>
+  <script type="text/javascript" src="js/crypto-js.min.js"></script>
+
+  <script>
+    var popup = document.getElementById("popup");
+
+    document.addEventListener("DOMContentLoaded", function () {
+      popup.click();
+    });
+  </script>
+
+
+</body>
+<!-- Mirrored from farmrioquizz.site/quizz/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 14 Jul 2024 23:03:52 GMT -->
+</html>
